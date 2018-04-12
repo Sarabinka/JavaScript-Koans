@@ -16,7 +16,7 @@ Mammal.prototype = {
 
 test("defining a 'class'", function() {
     var eric  = new Mammal("Eric");
-    equal(__, eric.sayHi(), 'what will Eric say?');
+    equal("Hello, my name is Eric", eric.sayHi(), 'what will Eric say?');
 });
 
 // add another function to the Mammal 'type' that uses the sayHi function
@@ -26,7 +26,7 @@ Mammal.prototype.favouriteSaying = function() {
 
 test("more functions", function() {
     var bobby = new Mammal("Bobby");
-    equal(__, bobby.favouriteSaying(), "what is Bobby's favourite saying?"); 
+    equal("Bobby's favourite saying is Hello, my name is Bobby", bobby.favouriteSaying(), "what is Bobby's favourite saying?");
 });
 
 test("calling functions added to a prototype after an object was created", function() {
